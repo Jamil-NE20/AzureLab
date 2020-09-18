@@ -14,7 +14,7 @@ namespace WebMVC.Controllers
     public class HomeController : Controller
     {
         //Hosted web API REST Service base url  
-        string Baseurl = "http://localhost:64108";
+        string Baseurl = "http://localhost:44388";
         public async Task<ActionResult> Index()
         {
             List<Speaker> SpkInfo = new List<Speaker>();
