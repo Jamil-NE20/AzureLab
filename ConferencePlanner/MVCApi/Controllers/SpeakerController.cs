@@ -10,6 +10,8 @@ namespace MVCApi.Controllers
 {
     public class SpeakerController : Controller
     {
+        
+        
         // GET: Speaker
         public ActionResult Index()
         {
@@ -69,5 +71,7 @@ namespace MVCApi.Controllers
 
             return View(speaker);
         }
+
+
     }
 }

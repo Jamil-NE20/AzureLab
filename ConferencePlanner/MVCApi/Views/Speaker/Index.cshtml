@@ -5,12 +5,14 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Speakers</h2>
 
 <p>
+    @Html.ActionLink("ViewData", "Index")
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -36,12 +38,8 @@
             <td>
                 @Html.DisplayFor(modelItem => item.WebSite)
             </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-            </td>
+            
         </tr>
     }
-   
 
-</table>
+</table>*@
