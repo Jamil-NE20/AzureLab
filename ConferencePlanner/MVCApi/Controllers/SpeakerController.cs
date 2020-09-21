@@ -17,9 +17,9 @@ namespace MVCApi.Controllers
 
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("http://localhost:63589/");
+                client.BaseAddress = new Uri("https://localhost:44388/api/");
                 //HTTP GET
-                var responseTask = client.GetAsync("speaker");
+                var responseTask = client.GetAsync("Speakers");
                 responseTask.Wait();
 
                 var result = responseTask.Result;
@@ -52,10 +52,10 @@ namespace MVCApi.Controllers
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("http://localhost:63589/speaker");
+                client.BaseAddress = new Uri("https://localhost:44388/api/Speakers");
 
                 //HTTP POST
-                var postTask = client.PostAsJsonAsync<SpeakerViewModel>("speaker", speaker);
+                var postTask = client.PostAsJsonAsync<SpeakerViewModel>("Speakers", speaker);
                 postTask.Wait();
 
                 var result = postTask.Result;
