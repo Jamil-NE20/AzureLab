@@ -293,6 +293,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Speaker\Index.cshtml" />
     <Content Include="Views\Speaker\create.cshtml" />
+    <Content Include="Views\Speaker\viewData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
