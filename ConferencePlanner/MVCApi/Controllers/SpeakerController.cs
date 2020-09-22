@@ -10,8 +10,13 @@ namespace MVCApi.Controllers
 {
     public class SpeakerController : Controller
     {
-        // GET: Speaker
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        // GET: Speaker
+        public ActionResult ViewData()
         {
             IEnumerable<SpeakerViewModel> speakers = null;
 
