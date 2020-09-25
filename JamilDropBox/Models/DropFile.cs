@@ -7,11 +7,8 @@ namespace JamilDropBox.Models
 {
     public class DropFile
     {
-        public int Id { get; set; }
-        public string NameFile { get; set; }
-
+        public string FileName { get; set; }
         public string FileSize { get; set; }
-
-        public string Description { get; set; }
+        public string ModifiedOn { get; set; }
     }
 }
