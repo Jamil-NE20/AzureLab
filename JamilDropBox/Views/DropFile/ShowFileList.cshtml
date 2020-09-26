@@ -1,0 +1,37 @@
+﻿@model IEnumerable<JamilDropBox.Models.DropFile>
+
+@{
+    ViewData["Title"] = "ShowFileList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>ShowFileList</h1>
+
+<p>
+    <a asp-action="Upload">Upload New File</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>FileName</th>
+            <th>FileSize</th>
+            <th>ModifiedOn</th>
+            <th>Descriptions(Class)</th>
+            <th>Download</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var data in Model)
+        {
+        <tr>
+            <td>@data.FileName</td>
+            <td>@data.FileSize</td>
+            <td>@data.ModifiedOn</td>
+            <td>@data.Descriptions</td>
+            <td> <a href="/DropFile/Download?blobName=@data.FileName">Download</a> </td>
+            <td> <a href="/DropFile/Delete?blobName=@data.FileName">Delete</a> </td>
+        </tr>
+        }
+    </tbody>
+</table>
