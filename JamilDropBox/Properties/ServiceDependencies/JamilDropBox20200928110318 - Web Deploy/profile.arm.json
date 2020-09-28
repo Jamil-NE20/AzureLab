@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "JamilDropBox20200925150113",
+      "defaultValue": "JamilDropBox20200928110318",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }
